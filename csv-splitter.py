@@ -26,7 +26,7 @@ def split_file(filename, header_size, chunk_size):
     if not os.path.exists('outputs'):
         os.mkdir('outputs')
 
-    with open(filename, "r", encoding='windows-1252') as big_file:
+    with open(filename, "r", encoding='utf-8') as big_file:
         header = []
         for _ in range(header_size):
             header.append(big_file.readline())
