@@ -19,3 +19,7 @@ A simple Python script to split big csv files (or any text files) into smaller o
 For example, to split a file into chunks of (the default) one million rows with a three-line header:
 
 ```python csv-splitter.py "/path/to/big/csv/file.csv" --header_size=3```
+
+### Notice
+
+The default encoding is UTF-8, if you need to specify any other encoding format, you may change ```encoding="utf-8"``` to any value you need.
